@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Button Count</h1>
+
+
+<p id="count">0</p>
+
+
+<button onclick="updateCount()">Increment</button>
+
+
+    <script>
+      
+        function updateCount() {
+            
+            var countElement = document.getElementById('count');
+            var count = parseInt(countElement.textContent);
+
+          
+            count++;
+
+            
+            countElement.textContent = count;
+        }
+    </script>
+</body>
+</html>

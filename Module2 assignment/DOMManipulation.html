@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click</title>
+</head>
+<body>
+ <button id="myButton">Click me!</button>
+
+<div id="myDiv">
+    <p>HTML content.</p>
+</div>
+
+<script>
+   
+    const button = document.getElementById('myButton');
+    const div = document.getElementById('myDiv');
+
+   
+    function changeContent() {
+        div.innerHTML = '<p>Lorem Ipsum is simply dummy text of the printing.</p>';
+    }
+
+    
+    button.addEventListener('click', changeContent);
+</script>
+
+
+
+
+</body>
+</html>
